@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>        
+        <!-- META SECTION -->
+        <title>Joli Admin - Responsive Bootstrap Admin Template</title>            
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <!-- END META SECTION -->
+                        
+        <!-- CSS INCLUDE -->        
+        <link rel="stylesheet" type="text/css" id="theme" href="css/theme-default.css"/>
+        <!-- EOF CSS INCLUDE -->                   
+    </head>
+    <body>
+        <!-- START PAGE CONTAINER -->
+        <div class="page-container">
+            <!-- START PAGE SIDEBAR -->
+            <div class="page-sidebar">
+                <!-- START X-NAVIGATION -->
+                <ul class="x-navigation">
+                    <li class="xn-logo">
+                        <a href="index.html">Joli Admin</a>
+                        <a href="#" class="x-navigation-control"></a>
+                    </li>
+                    <li class="xn-profile">
+                        <a href="#" class="profile-mini">
+                            <img src="assets/images/users/avatar.jpg" alt="John Doe"/>
+                        </a>
+                        <div class="profile">
+                            <div class="profile-image">
+                                <img src="assets/images/users/avatar.jpg" alt="John Doe"/>
+                            </div>
+                            <div class="profile-data">
+                                <div class="profile-data-name">John Doe</div>
+                            </div>
+                            <div class="profile-controls">
+                                <a href="pages-profile.html" class="profile-control-left"><span class="fa fa-info"></span></a>
+                                <a href="pages-messages.html" class="profile-control-right"><span class="fa fa-envelope"></span></a>
+                            </div>
+                        </div>                                                                        
+                    </li>
+                    <li class="active">
+                        <a href="index.html"><span class="fa fa-desktop"></span> <span class="xn-text">Dashboard</span></a>                        
+                    </li>   
+                    <li class="xn-openable">
+                        <a href="#"><span class="fa fa-sign-in"></span> Login</a>
+                            <ul>
+                                <li><a href="pages-login.html">App Login</a></li>
+                                <li><a href="pages-login-website.html">Website Login</a></li>
+                            </ul>
+                    </li>                 
+                    <li><a href="category.html"><span class="fa fa-files-o"></span>Category</a></li>
+                    <li><a href="post.html"><span class="fa fa-files-o"></span>Post</a></li>
+                    <li><a href="form-file-handling.html"><span class="fa fa-floppy-o"></span>File</a></li>
+                    <li><a href="tables.html"><span class="fa fa-table"></span>User</a></li> 
+                        </ul>
+                    </li>
+                                 
+                    
+                    
+                </ul>
+                <!-- END X-NAVIGATION -->
+            </div>
+            <!-- END PAGE SIDEBAR -->
+            
+            <!-- PAGE CONTENT -->
+            <div class="page-content">
+                
+                <!-- START X-NAVIGATION VERTICAL -->
+                <ul class="x-navigation x-navigation-horizontal x-navigation-panel">
+                    <!-- TOGGLE NAVIGATION -->
+                    <li class="xn-icon-button">
+                        <a href="#" class="x-navigation-minimize"><span class="fa fa-dedent"></span></a>
+                    </li>
+                    <!-- END TOGGLE NAVIGATION -->
+                    <!-- SEARCH -->
+                    <li class="xn-search">
+                        <form role="form">
+                            <input type="text" name="search" placeholder="Search..."/>
+                        </form>
+                    </li>   
+                    <!-- END SEARCH -->
+                    <!-- SIGN OUT -->
+                    <li class="xn-icon-button pull-right">
+                        <a href="#" class="mb-control" data-box="#mb-signout"><span class="fa fa-sign-out"></span></a>                        
+                    </li> 
+                    <!-- END SIGN OUT -->
+                   
+                </ul>
+                <!-- END X-NAVIGATION VERTICAL -->                   
+                
+                <!-- START BREADCRUMB -->
+                <ul class="breadcrumb">
+                   <li><a href="index.html">Dashboard</a></li>
+                    <li><a href="post.html">Post</a></li>
+                    <li class="active">Edit</li>
+                </ul>
+                <!-- END BREADCRUMB -->
+                
+                <!-- PAGE CONTENT WRAPPER -->
+                <div class="page-content-wrap">
+                
+                    <div class="row">
+                        <div class="col-md-12">
+                            
+                            <form class="form-horizontal">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h2><span class="fa fa-arrow-circle-o-left"></span> Edit Post</h2>
+                                    <ul class="panel-controls">
+                                        <li><a href="#" class="panel-remove"><span class="fa fa-times"></span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="panel-body">                                                                        
+                                    
+                                    <div class="form-group">
+                                        <label class="col-md-1 col-xs-12 control-label">Title</label>
+                                        <div class="col-md-11 col-xs-12">                                            
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" value="The 4 Essential Tools For Frontend Web Development"/>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group">                                        
+                                        <label class="col-md-1 col-xs-12 control-label">Category</label>
+                                       <div class="col-sm-11">
+                                        <select class="custom-select" id="">
+                                            <option selected>Choose...</option>
+                                            <option value="1">Web Design</option>
+                                            <option value="2">Javascript</option>
+                                            <option value="3">CSS</option>
+                                            <option value="3">JQuery</option>
+                                        </select>
+                                    </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-md-1 col-xs-12 control-label">Image</label>
+                                        <div class="col-md-11 col-xs-12">                                   
+                                            <input type="file" class="fileinput btn-primary" name="filename" id="filename" title="Choose image"/>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label class="col-md-1 col-xs-12 control-label">Textarea</label>
+                                        <div class="col-md-11 col-xs-12">                                            
+                                            <textarea class="form-control" rows="20">
+                                                Web development tools have come a long way in just a few short years. Thanks to this progress, we can harness the power of highly tested libraries to improve our workflow and benefit from greater possibilities when it comes to responsive design. Not only that, we can build things together thanks to ever-improving version control systems. From browser add-ons and plugins, to processors that streamline your code, there have never been more possibilities for creating awesome web applications.
+                                
+                                But with the number of web dev tools increasing almost daily, finding the best software to get the job done can sometimes feel daunting. To help you out, we’ve created a list of essential tools for frontend development to get you started. If you’re interested in finding out about one in particular, simply select it from the list below.
+                                   1. Sublime text
+                                   2. Chrome Development Tool
+                                   3. JQuery
+                                   4. GitHub
+                                1. Sublime text
+                                Let’s start with the basics: a first-rate code editor – one that features a well-designed, super efficient, and ultra speedy user interface. There are several that do this well, but arguably the best (and most popular) is Sublime Text.
+                                Artfully run by a one-man development team, the secret to Sublime’s success lies in the program’s vast array of keyboard shortcuts - such as the ability to perform simultaneous editing (making the same interactive changes to multiple selected areas) as well as quick navigation to files, symbols, and lines. And when you’re spending 8+ hours with your editor each day, those precious few seconds saved for each process really do add up…
+                                2. Chrome Development Tool
+                                   Wouldn’t it be great if you could edit your HTML and CSS in real-time, or debug your JavaScript, all while viewing a thorough performance analysis of your website?
+                                Google’s built-in Chrome Developer Tools let you do just that. Bundled and available in both Chrome and Safari, they allow developers access into the internals of their web application. On top of this, a palette of network tools can help optimize your loading flows, while a timeline gives you a deeper understanding of what the browser is doing at any given moment.
+                                Google release an update every six weeks – so check out their website as well as the Google Developers YouTube channel to keep your skills up-to-date.
+                                            </textarea>
+                                        </div>
+                                    </div>
+                                
+                                <div class="form-group">
+                                                <label class="col-md-1 control-label">File</label>
+                                                <div class="col-md-11">                                                                                                                                        
+                                                    <input type="file" class="fileinput btn-primary" name="filename" id="filename" title="Browse file"/>
+                                                </div>
+                                            </div>
+                                </div>
+                             
+
+                            <div class="modal-footer" style="text-align: right;">
+                                        <button type="button" class="btn btn-primary" id = "show-btn1" value="Publish">Publish</button>
+                                        <button type="button" class="btn btn-info" id = "show-btn2" value="Publish">Save as draft</button>
+                                        <button type="button" href="edit-post.html" class="btn btn-danger" id = "show-btn3" value="Publish">Cancel</button>
+                            </div>
+
+                        </form>
+                        
+                            
+                        </div>
+                    </div>                    
+                    
+                </div>
+                <!-- END PAGE CONTENT WRAPPER -->                                                
+            </div>            
+            <!-- END PAGE CONTENT -->
+        </div>
+        <!-- END PAGE CONTAINER -->
+        
+        <!-- MESSAGE BOX-->
+        <div class="message-box animated fadeIn" data-sound="alert" id="mb-signout">
+            <div class="mb-container">
+                <div class="mb-middle">
+                    <div class="mb-title"><span class="fa fa-sign-out"></span> Log <strong>Out</strong> ?</div>
+                    <div class="mb-content">
+                        <p>Are you sure you want to log out?</p>                    
+                        <p>Press No if youwant to continue work. Press Yes to logout current user.</p>
+                    </div>
+                    <div class="mb-footer">
+                        <div class="pull-right">
+                            <a href="pages-login.html" class="btn btn-success btn-lg">Yes</a>
+                            <button class="btn btn-default btn-lg mb-control-close">No</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MESSAGE BOX-->
+
+        <!-- START PRELOADS -->
+        <audio id="audio-alert" src="audio/alert.mp3" preload="auto"></audio>
+        <audio id="audio-fail" src="audio/fail.mp3" preload="auto"></audio>
+        <!-- END PRELOADS -->             
+        
+    <!-- START SCRIPTS -->
+        <!-- START PLUGINS -->
+        <script language="javascript">
+            var button = document.getElementById("show-btn1");
+        
+            button.onclick = function()
+            {
+              alert("A Post Has Been Publised");
+            };
+        </script>
+
+        <script language="javascript">
+            var button = document.getElementById("show-btn2");
+        
+            button.onclick = function()
+            {
+              alert("A Post Has Been Publised");
+            };
+        </script>
+
+
+        <script type="text/javascript" src="js/plugins/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="js/plugins/jquery/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/plugins/bootstrap/bootstrap.min.js"></script>                
+        <!-- END PLUGINS -->
+        
+        <!-- THIS PAGE PLUGINS -->
+
+        <script type='text/javascript' src='js/plugins/icheck/icheck.min.js'></script>
+        <script type="text/javascript" src="js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js"></script>
+        
+        <script type="text/javascript" src="js/plugins/bootstrap/bootstrap-datepicker.js"></script>                
+        <script type="text/javascript" src="js/plugins/bootstrap/bootstrap-file-input.js"></script>
+        <script type="text/javascript" src="js/plugins/bootstrap/bootstrap-select.js"></script>
+        <script type="text/javascript" src="js/plugins/tagsinput/jquery.tagsinput.min.js"></script>
+        <!-- END THIS PAGE PLUGINS -->       
+        
+        <!-- START TEMPLATE -->
+        <script type="text/javascript" src="js/settings.js"></script>
+        
+        <script type="text/javascript" src="js/plugins.js"></script>        
+        <script type="text/javascript" src="js/actions.js"></script>        
+        <!-- END TEMPLATE -->
+    <!-- END SCRIPTS -->                   
+    </body>
+</html>
+
+
+
+
+
+
